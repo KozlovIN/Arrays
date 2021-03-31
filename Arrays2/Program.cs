@@ -48,9 +48,9 @@ namespace Arrays2
             }
 
           
-            string s2 = string.Empty;
-            Console.WriteLine(s2);
-            Console.WriteLine("Наибольшее число: " + maxValue);
+            //string s2 = string.Empty;
+           // Console.WriteLine(s2);
+           // Console.WriteLine("Наибольшее число: " + maxValue);
 
             int secondMaxValue = Array[0];
 
