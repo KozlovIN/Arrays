@@ -17,7 +17,7 @@ namespace Arrays2
             int n = Convert.ToInt32(Console.ReadLine());
 
             int[] Array = new int[n];
-            Console.Write("Введите сам массив: ");
+            Console.Write("Введите числа массива (от 0 до 9, без пробелов): ");
 
             for (int i = 0; i < n; i++)
             {
