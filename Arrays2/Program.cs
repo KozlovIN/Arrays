@@ -48,9 +48,9 @@ namespace Arrays2
             }
 
           
-            //string s2 = string.Empty;
-           // Console.WriteLine(s2);
-           // Console.WriteLine("Наибольшее число: " + maxValue);
+           // string s2 = string.Empty;
+           //Console.WriteLine(s2);
+           //Console.WriteLine("Наибольшее число: " + maxValue);
 
             int secondMaxValue = Array[0];
 
@@ -59,13 +59,30 @@ namespace Arrays2
                 if (Array[i] > secondMaxValue && Array[i] < maxValue)
                 {
                     secondMaxValue = Array[i];
+                }
+                
+            }
+
+            if (secondMaxValue == maxValue)
+            {
+                int secondMaxValue2 = Array[1];
+                for (int i = 2; i < n; i++)
+                {
+                    if (Array[i] > secondMaxValue2 && Array[i] < maxValue)
+                    {
+                        secondMaxValue2 = Array[i];
+                    }
 
                 }
+                Console.WriteLine("Второе наибольшее число: " + secondMaxValue2);
+                return;
             }
 
             string s3 = string.Empty;
             Console.WriteLine(s3);
             Console.WriteLine("Второе наибольшее число: " + secondMaxValue);
+            
+            
         }
 
     }

@@ -60,6 +60,21 @@ namespace Arrays
                 }
             }
 
+            if (secondMaxValue == maxValue)
+            {
+                int secondMaxValue2 = Array[1];
+                for (int i = 2; i < n; i++)
+                {
+                    if (Array[i] > secondMaxValue2 && Array[i] < maxValue)
+                    {
+                        secondMaxValue2 = Array[i];
+                    }
+
+                }
+                Console.WriteLine("Второе наибольшее число: " + secondMaxValue2);
+                return;
+            }
+
             string s3 = string.Empty;
             Console.WriteLine(s3);
             Console.WriteLine("Второе наибольшее число: " + secondMaxValue);
